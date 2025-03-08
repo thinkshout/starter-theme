@@ -15,13 +15,9 @@ use Timber\Timber;
 $templates = [ 'templates/index.twig' ];
 
 if ( is_home() ) {
-	array_unshift( $templates, 'pages/front-page.twig', 'pages/home.twig' );
+	array_unshift( $templates, 'pages/home.twig' );
 }
 
-$context = Timber::context(
-	[
-		'foo' => 'bar',
-	]
-);
+$context = Timber::context( [] );
 
 Timber::render( $templates, $context );
