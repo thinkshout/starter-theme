@@ -128,11 +128,14 @@ class StarterSite extends Site {
 	 * @param array $context context['this'] Being the Twig's {{ this }}
 	 */
 	public function add_to_context( $context ) {
-		$context['foo']   = 'bar';
+		$context['foo'] = 'bar';
 		$context['stuff'] = 'I am a value set in your functions.php file';
 		$context['notes'] = 'These values are available everytime you call Timber::context();';
-		$context['menu']  = Timber::get_menu( 'primary_navigation' );
-		$context['site']  = $this;
+		$context['menus']['header_primary_navigation'] = Timber::get_menu( 'primary_navigation' );
+		$context['menus']['header_utility_navigation'] = Timber::get_menu( 'utility_navigation' );
+		$context['menus']['footer_about'] = Timber::get_menu( 'about' );
+		$context['menus']['footer_copyright'] = Timber::get_menu( 'copyright' );
+		$context['site'] = $this;
 
 		return $context;
 	}
@@ -148,7 +151,10 @@ class StarterSite extends Site {
 		// Register navigation menus
 		register_nav_menus(
 			[
-				'primary_navigation' => _x( 'Main menu', 'Backend - menu name', 'thinktimber' ),
+				'primary_navigation' => __( 'Main menu', 'thinktimber' ),
+				'utility_navigation' => __( 'Utility menu', 'thinktimber' ),
+				'about' => __( 'About menu', 'thinktimber' ),
+				'copyright' => __( 'Copyright menu', 'thinktimber' ),
 			]
 		);
 
