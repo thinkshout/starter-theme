@@ -50,6 +50,7 @@ class StarterSite extends Site {
 		add_filter( 'timber/twig/environment/options', [ $this, 'update_twig_environment_options' ] );
 
 		add_filter( 'timber/acf-gutenberg-blocks-templates', array( $this, 'acf_gutenberg_blocks_template_location' ) );
+		add_filter( 'timber/acf-gutenberg-blocks-data', array( $this, 'acf_gutenberg_blocks_data' ) );
 		add_filter( 'acf/settings/save_json', array( $this, 'acf_json_save_point' ) );
 		add_filter( 'acf/settings/load_json', array( $this, 'acf_json_load_point' ) );
 		add_filter( 'use_block_editor_for_post_type', array( $this, 'check_post_can_gutenberg' ), 10, 2 );
@@ -115,6 +116,16 @@ class StarterSite extends Site {
 	}
 
 	/**
+	 * Alter data for the Timber context of all your blocks.
+	 */
+	public function acf_gutenberg_blocks_data( $context ) {
+		// Set the styleguide flag to render "example" blocks like the style guide.
+		$context['styleguide'] = ! empty( $context['fields']['is_example'] );
+
+		return $context;
+	}
+
+	/**
 	 * Add @thinktimber namespace for twig templates used in other contexts.
 	 */
 	public function timber_loader($loader){
@@ -133,6 +144,7 @@ class StarterSite extends Site {
 		$context['notes'] = 'These values are available everytime you call Timber::context();';
 		$context['menu']  = Timber::get_menu( 'primary_navigation' );
 		$context['site']  = $this;
+		$context['styleguide'] = is_page( 'style-guide' );
 
 		return $context;
 	}
