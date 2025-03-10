@@ -24,8 +24,8 @@
         },
         {
             "key": "field_651379245ec69",
-            "label": "Title",
-            "name": "title",
+            "label": "Heading",
+            "name": "heading",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -38,6 +38,7 @@
             },
             "default_value": "",
             "maxlength": "",
+            "allow_in_bindings": 1,
             "placeholder": "",
             "prepend": "",
             "append": ""
@@ -113,5 +114,5 @@
     "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1695775490
+    "modified": 1741581174
 }

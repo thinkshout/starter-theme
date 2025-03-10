@@ -17,13 +17,17 @@
                 "id": ""
             },
             "choices": {
-                "default": "Text on Left",
-                "ctaCenter": "Centered"
+                "default": "Default (Text on Left)",
+                "fullBleed": "Full Bleed",
+                "center": "Inset (Centered)",
+                "left": "Left Aligned",
+                "right": "Right Aligned"
             },
-            "default_value": false,
+            "default_value": "default",
             "return_format": "value",
             "multiple": 0,
             "allow_null": 0,
+            "allow_in_bindings": 1,
             "ui": 0,
             "ajax": 0,
             "placeholder": ""
@@ -47,5 +51,5 @@
     "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1703082400
+    "modified": 1741580285
 }

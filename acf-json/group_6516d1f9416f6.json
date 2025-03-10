@@ -1,13 +1,13 @@
 {
     "key": "group_6516d1f9416f6",
-    "title": "Block - Card Grid",
+    "title": "Block - Number Cards",
     "fields": [
         {
-            "key": "field_6516d1f979d85",
-            "label": "Card Grid Block",
-            "name": "card_grid_block",
+            "key": "field_67ce636f68aec",
+            "label": "Number Cards Block",
+            "name": "",
             "aria-label": "",
-            "type": "clone",
+            "type": "message",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,13 +16,99 @@
                 "class": "",
                 "id": ""
             },
-            "clone": [
-                "group_650ce02cd2c7a"
-            ],
-            "display": "seamless",
-            "layout": "block",
-            "prefix_label": 0,
-            "prefix_name": 0
+            "message": "A block that displays a grid of statistic cards.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_67ce639368aed",
+            "label": "Block Cards",
+            "name": "block_cards",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Card",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_67ce63f568aee",
+                    "label": "Heading",
+                    "name": "heading",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_67ce639368aed"
+                },
+                {
+                    "key": "field_67ce63fe68aef",
+                    "label": "Subheading",
+                    "name": "subheading",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_67ce639368aed"
+                },
+                {
+                    "key": "field_67ce640a68af0",
+                    "label": "Text",
+                    "name": "text",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": "",
+                    "parent_repeater": "field_67ce639368aed"
+                }
+            ]
         }
     ],
     "location": [
@@ -30,7 +116,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/card-grid"
+                "value": "acf\/cards-numbers--controller"
             }
         ]
     ],
@@ -43,5 +129,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1695994399
+    "modified": 1741579295
 }

@@ -108,8 +108,8 @@
             "sub_fields": [
                 {
                     "key": "field_6511919e86dd4",
-                    "label": "Card Title",
-                    "name": "title",
+                    "label": "Card Heading",
+                    "name": "heading",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -122,6 +122,7 @@
                     },
                     "default_value": "",
                     "maxlength": "",
+                    "allow_in_bindings": 1,
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
@@ -236,5 +237,5 @@
     "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1707169526
+    "modified": 1741581218
 }

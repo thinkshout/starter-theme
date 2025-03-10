@@ -48,7 +48,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/news-grid"
+                "value": "acf\/cards-news--controller"
             }
         ]
     ],
@@ -61,5 +61,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1703260553
+    "modified": 1741579401
 }

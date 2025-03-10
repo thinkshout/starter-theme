@@ -48,7 +48,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/wayfinding-cards"
+                "value": "acf\/cards-wayfinding--controller"
             }
         ]
     ],
@@ -61,5 +61,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1703260593
+    "modified": 1741579491
 }

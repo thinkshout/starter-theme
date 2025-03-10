@@ -44,8 +44,8 @@
             "sub_fields": [
                 {
                     "key": "field_6452a153caa81",
-                    "label": "Title",
-                    "name": "title",
+                    "label": "Heading",
+                    "name": "heading",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -58,6 +58,7 @@
                     },
                     "default_value": "",
                     "maxlength": "",
+                    "allow_in_bindings": 1,
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
@@ -92,7 +93,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/accordion"
+                "value": "acf\/accordion--controller"
             }
         ]
     ],
@@ -105,5 +106,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1703260384
+    "modified": 1741578685
 }

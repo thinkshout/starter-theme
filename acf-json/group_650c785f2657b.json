@@ -35,14 +35,14 @@
                 "id": ""
             },
             "choices": {
-                "left": "Left aligned",
-                "center": "Center aligned",
-                "row": "Text and button are side-by-side"
+                "row": "Text and button are side-by-side",
+                "centered": "Center aligned"
             },
             "default_value": false,
             "return_format": "value",
             "multiple": 0,
             "allow_null": 0,
+            "allow_in_bindings": 1,
             "ui": 0,
             "ajax": 0,
             "placeholder": ""
@@ -88,5 +88,5 @@
     "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1703260497
+    "modified": 1741581034
 }
